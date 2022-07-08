@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./assets/js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <title>Interpet</title>
+</head>
+
+<body>
+
+  <!--     barra de navegacion     -->
+  <nav class="navbar navbar-expand-sm bg-light  navbar-light sticky-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="Avatar Logo" class="logo" />
+      </a>
+      <div>
+        <a class="numeroTel cerrar_movil" href="tel:+529996020550" target="#"><span><i class="bi bi-phone"></i>
+            CEL.999-602-05-50</span></a>
+      </div>
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+        MENU<span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">inicio</a></li>
+          <li class="nav-item dropdown align-items-lg-end">
+            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Registro</a>
+            <ul class="dropdown-menu">
+              <li><a href="./pages/Formulario_mascota.html" class="dropdown-item">mascotas</a></li>
+              <!-- <li><a href="#" class="dropdown-item">médicos</a></li> -->
+            </ul>
+          </li>
+          <!--           <li class="nav-item">
+            <a rel="noreferrer" class="nav-link" href="#">Servicios</a>
+          </li> -->
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"> Inicia Sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--       fin de la barra de navegacion  -->
+
+  <!--               Modal de inicio de sesion      -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Inicie Sesion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <div class="text-center log">
+              <form class="bg-light" action="">
+                <img class="mt-4 log_img" src="../images/logo.png" alt="">
+                <label for="" class="sr-only"><input type="text" class="form-control" placeholder="User" required
+                    autofocus></label>
+
+                <label for="password"><input type="password" name="password" id="1" class="form-control"
+                    placeholder="Password"></label>
+
+
+                <label><input class="form-check-input" type="checkbox" value="remember-me"> Recordar Cuenta</label>
+                <div class="mt-3">
+                  <button class=" btn btn-primary">Iniciar Sesion</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--               Modal de inicio de sesion      -->
+
+
+  <!--       Comienza la galeria de entrada-->
+  <section class="gallery">
+    <div class="gallery_img"></div>
+    <div class="gallery_img"></div>
+  </section>
+  <!-- termina la galeria de entrada -->
+
+  <!--       principales servicios   -->
+  <div>
+    <ul class="principales-servicios">
+      <li class="cards">
+        <img class="card-img-top" src="./svg/undraw_good_doggy_re_eet7.svg" alt="imagen4" />
+        <p><br></p>
+        <h2>Nuestros Mejores Amigos</h2>
+        <p class="card-body ">
+          <br>
+          Cuida a nuestros mishis y firulais <br>
+
+        </p>
+      </li>
+      <li class="cards">
+        <img class="card-img-top" src="./svg/undraw_mobile_app_re_catg.svg" alt="imagen4" />
+        <p><br></p>
+        <h2>Miralo, Donde Sea!</h2>
+        <p class="card-body">
+          <br>
+          Tendras acceso en donde quiera que estes. <br>
+          llevanos en tu smartphone por todo el mundo
+        </p>
+      </li>
+      <li class="cards">
+        <img class="card-img-top" src="/svg/undraw_passing_by_re_l89d.svg" alt="imagen4" />
+        <p><br></p>
+        <h2>La Salud Es Lo Primero</h2>
+        <p class="card-body"> <br>
+          aplicacion vacunas
+          cuidemos juntos a nuestros amigos
+          comuniquese con nosotros
+        </p>
+      </li>
+      <li class="cards">
+        <p><br><br></p>
+        <img class="card-img-top" src="./svg/undraw_playful_cat_re_ac9g.svg" alt="imagen4" />
+        <h2><br>Seguridad Asegurada</h2>
+        <br>
+        <p class="card-body">
+          Cuida a tus mascotas <br>
+          Nuestros chips garantizan la comodidad y seguridad de tu mascota
+        </p>
+      </li>
+    </ul>
+
+    <br /><br /><br />
+  </div>
+  <!-- principales servicios -->
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-black text-light">
+    <!-- Section: Links  -->
+    <section class="p-1">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <p> Terminos y Condiciones <br>
+            </p>
+            <p>Formas de pago<br> </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <p class="text-uppercase mb-4 h6">Contactanos</p>
+            <p>
+              Acerca de nosotros
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

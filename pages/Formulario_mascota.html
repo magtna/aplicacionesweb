@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Paciente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../styles/Form.css">
+        
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light  navbar-light sticky-top shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../images/logo.png" alt="Avatar Logo" class="logo" />
+          </a>
+          <div>
+            <a class="numeroTel cerrar_movil" href="tel:+529996020550" target="#"><span><i class="bi bi-phone"></i>
+                CEL.999-602-05-50</span></a>
+          </div>
+    
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+            MENU<span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav">
+              <li class="nav-item"><a href="../index.html" class="nav-link">inicio</a></li>
+              <li class="nav-item dropdown align-items-lg-end">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Registro</a>
+                <ul class="dropdown-menu">
+                  <li><a href="./pages/Formulario_mascota.html" class="dropdown-item">mascotas</a></li>
+                 <!--  <li><a href="#" class="dropdown-item">médicos</a></li> -->
+                </ul>
+              </li>
+              <!--           <li class="nav-item">
+                <a rel="noreferrer" class="nav-link" href="#">Servicios</a>
+              </li> -->
+              <li class="nav-item">
+                <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"> Inicia Sesion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container g-3 m-5 align-content-center text-center ">
+        <h2 class=" h1 ">Agregar mascota</h2>
+
+        <div class="Container d-flex justify-content-center p-5 borde">
+            <form class="row g-5">
+                <div class="col-md-6 text-center">
+                    <img src="../imagenes/perrito.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <label for="inputname" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="inputname" placeholder="Nombre">
+                </div>
+                <div class="col-6">
+                    <label for="inputage" class="form-label">Edad:</label>
+                    <input type="text" class="form-control" id="inputage" placeholder="Edad">
+                </div>
+                <div class="col-6 ">
+                    <label for="inputrace" class="form-label">Raza de la mascota:</label>
+                    <input type="text" class="form-control" id="inputrace" placeholder="Raza">
+                </div>
+                <div class="col-6">
+                    <label for="inputallergy" class="form-label">Alergia/as de la mascota:</label>
+                    <input type="text" class="form-control" id="inputallergy" placeholder="Alergia">
+                </div>
+                <div class="col-6">
+                    <label for="inputdescription" class="form-label">Descripcion de alergia de la mascota:</label>
+                    <textarea name="Descricion" id="message" class="form-control" placeholder="Descripcion"></textarea>
+                </div>
+
+                <div class="col-3">
+                    <label for="inputmedicine" class="form-label">Medicamento a tomar:</label>
+                    <input type="text" class="form-control" id="inputmedicine" placeholder="Indique medicamento">
+                </div>
+                <div class="col-3">
+                    <label for="inputmedic" class="form-label"> Dosis:</label>
+                    <input type="text" class="form-control" id="inputmedic" placeholder="Dosis de medicacion">
+                </div>
+                <div class="col-6">
+                    <label for="inputnotes" class="form-label">Notas importantes:</label>
+                    <input type="text" class="form-control" id="inputnotes" placeholder="Notas">
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn btn-primary">Historial Medico</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

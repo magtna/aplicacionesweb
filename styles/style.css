@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+/* 	.navbar .nav-item:hover .nav-link{   }
+ */	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+.logo{width: 80px;}
+
+.gallery{
+    height: 600px;
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+}
+.gallery_img{
+    width: 80px;
+    height: 80%;
+    background-size:cover ;
+    background-position: center;
+    transition: flex .5s;
+    flex: 1;
+    display: grid;
+
+    --message:'Contactanos';
+    --clip: circle(0 at center);
+    --transition: clip-path .3s;
+}
+.gallery_img::before{
+    content: var(--message);
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.5);;
+    font-family: inherit;
+    font-size: 2rem;
+    color: whitesmoke;
+    clip-path: var(--clip);
+    transition: var(--transition);
+}
+.gallery_img:hover{
+    flex: 6;
+    --clip:circle(180% at center);
+    --transition: clip-path .3s .3s;
+}
+.gallery_img:nth-child(1){
+    background-image: url('/images/mascota.jpg');
+}
+.gallery_img:nth-child(2){
+    background-image: url('/images/doctores.jpg');
+
+}
+
+.log_img{
+    max-width: 15%;
+}
+
+form{
+    max-width: 60%;
+    margin: auto;
+}
+.cards {
+    width: 80%;
+    height: 90%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-transform: none;
+}
+
+.cards:hover {
+    box-shadow: 5px 6px 6px 2px #e9ecef23;
+    transform: scale(1.1)
+}
+.card-body{
+    text-transform: none;
+}
+body{
+   font-family: 'Roboto', sans-serif;  
+   text-transform: uppercase;
+   text-align: center;
+    background-color: hsl(0, 0%, 100%);
+}
+.apps{
+    font-size: 32px;
+}
+.centrar{
+    display: grid;
+    place-items: center;
+}
+.numeroTel{
+    text-align: start;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+}
+
+.log_img{
+    max-width:35%;
+    margin-bottom: 1rem;
+}
+input{
+    margin: 2rem;
+}
+form{
+    max-width: auto;
+    margin: auto;
+
+}
+.log{
+    height: auto;
+}
+.portada{
+    display: block;
+    width: 100%;
+    max-height: min-content;
+}
+.TwoCol{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.titulo-parrafo{
+    text-align: center;
+    font-size: 250%;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.nombre{
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 1%;
+    color: seashell;
+    width: 100%;
+    text-align: center;
+}
+.principales-servicios{
+    width: 80%;
+    list-style: none;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    margin: auto;
+    padding: 40px;
+    gap: 20px;
+}
+.principales-servicios li{
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    
+}
+.principales-servicios li img{
+width: 45%;
+}
+
+/* media para moviles*/
+@media screen  and (max-width: 800px) {
+    .navbar{
+        text-align: start;
+    }
+    .apps{
+        font-size: 32px;
+    }
+
+    .mapa{
+        width: 100%;
+        height: 50vh;
+    }
+    .principales-servicios{
+        list-style: none;
+        display: block;
+        margin: auto;
+        padding: 40px;
+    }
+    .TwoCol{
+        display: block;
+    }
+    .mapa{
+        width: 100%;
+        height: 10rem;
+        border-radius: 20px;
+    }
+
+
+}
+@media screen and (min-width:1200px) {
+
+    .mapa{
+        width: 100%;
+        height: 30vh;
+        border-radius: 20px;
+
+    }
+}
+@media screen and (max-width:530px) {
+    .cerrar_movil{
+        display: none;
+    }
+    .gallery_img{
+        display: none;
+    }
+    }
+/* media para computadora */

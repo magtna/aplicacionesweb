@@ -1,0 +1,24 @@
+
+.borde{ display: flex;
+    border-radius: 2.5rem;
+    border-style: solid;
+    border-color: rgba(0, 0, 0,.3);
+}
+h1{ padding-top: 2rem;}
+.logo{width: 80px;}
+body{
+    font-family: 'Roboto', sans-serif;  
+    text-transform: uppercase;
+    text-align: center;
+     background-color: hsl(0, 0%, 100%);
+ } 
+ .centrar{
+    display: grid;
+    place-items: center;
+}
+.numeroTel{
+    text-align: start;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+}
