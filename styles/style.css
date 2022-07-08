@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
 /* 	.navbar .nav-item:hover .nav-link{   }
  */	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }	
+.logo{width: 80px;}
 
 .gallery{
     height: 600px;
@@ -48,7 +50,7 @@
     background-image: url('/images/doctores.jpg');
 
 }
-.logo{width: 80px;}
+
 .log_img{
     max-width: 15%;
 }
@@ -194,8 +196,8 @@ width: 45%;
     .cerrar_movil{
         display: none;
     }
-    .gallery_img{
+/*     .gallery_img{
         display: none;
-    }
+    } */
     }
 /* media para computadora */

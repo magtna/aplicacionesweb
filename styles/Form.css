@@ -31,3 +31,11 @@ form{
     max-width: 60%;
     margin: auto;
 }
+.log{
+    height: auto;
+}
+
+.form_us{
+    width: auto;
+    max-width: 100%;
+}
