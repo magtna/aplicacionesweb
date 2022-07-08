@@ -22,3 +22,12 @@ body{
     text-decoration: none;
     color: black;
 }
+.logo{width: 80px;}
+.log_img{
+    max-width: 15%;
+}
+
+form{
+    max-width: 60%;
+    margin: auto;
+}
